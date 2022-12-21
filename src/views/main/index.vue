@@ -2,11 +2,11 @@
   <div class="main">
     <div class="main-list">
       <div
-        v-for="item in repoList"
-        :key="item.id"
+        v-for="repo in repoList"
+        :key="repo.id"
         class="main-item"
       >
-        <RepoItem :detail="{...item}" />
+        <RepoItem :detail="repo" />
       </div>
     </div>
     <div class="main-observer" ref="observerRef" />
